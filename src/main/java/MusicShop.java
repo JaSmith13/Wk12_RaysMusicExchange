@@ -4,20 +4,13 @@ import java.util.ArrayList;
 
 public class MusicShop {
 
-    private static MusicShop instance = null;
+
     private ArrayList<ISell> stock;
     private double money;
 
     public MusicShop() {
         this.stock = new ArrayList<>();
         this.money = 500;
-    }
-
-    public static MusicShop getInstance() {
-        if(instance == null) {
-            instance = new MusicShop();
-        }
-        return instance;
     }
 
     public ArrayList<ISell> getStock() {
@@ -36,4 +29,13 @@ public class MusicShop {
     public double getMoney() {
         return money;
     }
+
+    public double calculatePotentialProfit(){
+        double profit = 0;
+        for(ISell item: stock){
+            profit += item.calculateMarkup();
+        }
+        return profit;
+    }
+
 }
