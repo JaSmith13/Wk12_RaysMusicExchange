@@ -4,8 +4,8 @@ public class Guitar extends Instrument{
     private int strings;
     private boolean isAcoustic;
 
-    public Guitar(int strings, boolean isAcoustic, InstrumentCategory category, double price, String brand) {
-        super(category, price, brand);
+    public Guitar(int strings, boolean isAcoustic, double price, String brand) {
+        super(InstrumentCategory.STRING, price, brand);
         this.strings = strings;
         this.isAcoustic = isAcoustic;
     }

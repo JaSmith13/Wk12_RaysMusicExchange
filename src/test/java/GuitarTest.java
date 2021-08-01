@@ -11,7 +11,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(6,true, InstrumentCategory.STRING,400, "Epiphone");
+        guitar = new Guitar(6,true, 400, "Epiphone");
     }
 
     @Test
@@ -46,7 +46,7 @@ public class GuitarTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(560, guitar.calculateMarkup(guitar.getPrice()), 0.01);
+        assertEquals(560, guitar.calculateMarkup(), 0.01);
     }
 
 }

@@ -5,7 +5,9 @@ public enum InstrumentCategory {
     STRING ("Strum strum"),
     BRASS ("Phwamp wamp"),
     WOODWIND ("Whistle"),
+    PIANO ("Plink plonk"),
     PERCUSSION ("Crash Crash!");
+
 
     private final String soundEffect;
 

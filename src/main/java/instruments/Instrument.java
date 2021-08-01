@@ -32,7 +32,8 @@ public abstract class Instrument implements IPlay, ISell {
         return this.category.getSoundEffect();
     }
 
-    public double calculateMarkup(double price){
-        return price * 1.4;
+    public double calculateMarkup(){
+        return this.price * 1.4;
     }
+
 }

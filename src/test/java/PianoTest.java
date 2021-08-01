@@ -11,7 +11,7 @@ public class PianoTest {
 
     @Before
     public void before(){
-        piano = new Piano(InstrumentCategory.STRING, 1000, "Steinway", 88);
+        piano = new Piano(1000, "Steinway", 88);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class PianoTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(1400, piano.calculateMarkup(piano.getPrice()), 0.01);
+        assertEquals(1400, piano.calculateMarkup(), 0.01);
     }
 }

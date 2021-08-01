@@ -20,7 +20,7 @@ public class SheetMusic implements ISell {
         return artist;
     }
 
-    public double calculateMarkup(double price){
-        return price * 2;
+    public double calculateMarkup(){
+        return this.price * 2;
     }
 }
