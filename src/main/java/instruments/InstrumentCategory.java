@@ -2,8 +2,8 @@ package instruments;
 
 public enum InstrumentCategory {
 
-    STRING ("Twang"),
-    BRASS ("Phwamp"),
+    STRING ("Strum strum"),
+    BRASS ("Phwamp wamp"),
     WOODWIND ("Whistle"),
     PERCUSSION ("Crash Crash!");
 

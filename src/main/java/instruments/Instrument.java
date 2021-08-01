@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public class Instrument implements IPlay {
+public abstract class Instrument implements IPlay, ISell {
 
     private InstrumentCategory category;
     private double price;
@@ -29,5 +30,9 @@ public class Instrument implements IPlay {
 
     public String play(){
         return this.category.getSoundEffect();
+    }
+
+    public double calculateMarkup(double price){
+        return price * 1.4;
     }
 }

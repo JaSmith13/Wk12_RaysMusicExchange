@@ -39,5 +39,15 @@ public class GuitarTest {
         assertEquals("Epiphone", guitar.getBrand());
     }
 
+    @Test
+    public void canPlayInstrument(){
+        assertEquals("Strum strum", guitar.play());
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(560, guitar.calculateMarkup(guitar.getPrice()), 0.01);
+    }
+
 }
 
